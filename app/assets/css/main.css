@@ -1,0 +1,219 @@
+@import "reset.css";
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+*, *:before, *:after{
+  box-sizing: content-box; 
+}
+a:hover{
+  text-decoration: none;
+}
+.overflow{
+  overflow: hidden !important;
+}
+#body{
+/*  width: 900px;
+  height: 550px;*/  
+  font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+  height: 554px;
+  overflow-x: hidden;
+ 
+}
+.ms-yh,h2{
+    font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,\534E\6587\7EC6\9ED1;
+}
+/*sidebar*/
+#sidebar{
+  width: 200px;
+  height: 554px;
+  /*float: left;*/
+  position: fixed;
+  left: 0;
+  top: 0;
+   background: #333;
+}
+#sidebar h2{
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  border-left: 3px solid #fff;
+  color: #ddd;
+  
+  margin-bottom: 5px;
+}
+#sidebar .content{
+  padding: 10px;
+}
+#sidebar .content ul a{
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  transition:All 0.2s ease;
+}
+#sidebar .content ul a:hover{
+  background-color: #666;
+}
+#sidebar hr{
+  margin: 15px 0;
+}
+#sidebar .content h2 a{
+  color: #fff;
+  margin-left: 10px;
+  opacity: 0.8;
+}
+#sidebar .content h2 a:hover{
+  opacity: 1;
+}
+/*content*/
+#content{
+  margin-left: 200px;
+  height: 100%;
+  min-height: 554px;
+  position: relative;
+  z-index: 1;
+}
+#content.loading{
+  background:#fff url(../images/loading.gif) no-repeat center;
+}
+#content .content{
+  padding: 10px;
+  background: #fff;
+}
+#content h2{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#content iframe{
+  display: none;
+}
+/*fdmaven*/
+
+/*init*/
+.maven-content{
+  width: 300%;
+}
+.maven-content .guide{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  top: 230px;
+  background: rgba(0,0,0,0.1);
+  transition:All 0.2s ease;
+  z-index: 1;
+  line-height: 50px;
+  font-size: 30px;
+  opacity: 0.1;
+}
+.maven-content .guide:hover{
+  opacity: 1;
+  color: #000;
+}
+.maven-content .guide.prev{
+  left: 210px;
+}
+.maven-content .guide.next{
+  right: 10px;
+}
+.step{
+  width: 33%;
+  float: left;
+  margin-right: 10px;
+}
+
+.init .step1 ul li{
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+
+}
+.init .step1 ul li a{
+  display: block;
+  height: 80px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  border:1px solid #ccc; 
+  text-decoration: none;
+  font-weight: bold;
+}
+.init .step1 ul li a span{
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+}
+.init .step1 ul li .mask{
+  display: none;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  opacity: 0.7;
+  background-color: #000;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 200px;
+  color: #fff;
+  font-size: 16px;
+}
+.init .step1 ul li:hover .mask{
+  display: block;
+}
+
+/*build*/
+.build .projlist li{
+  height: 60px;
+}
+.build .projlist li .glyphicon-list-alt{
+  float: left;
+  font-size: 40px;
+  line-height: 60px;
+  margin-right: 5px;
+}
+.build .projlist li a{
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+.build .projlist li a span{
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+.build .filelist li{
+  font-size: 14px;
+  line-height: 25px;
+}
+.build .filelist .glyphicon{
+  margin-right: 5px;
+}
+.build .files{
+  margin-left: 15px;
+}
+
+/*model*/
+.modal .modal-title{
+  font-size: 14px;
+  font-weight: bold;
+}
+.modal .form-group{
+  margin-left: 0;
+  margin-right: 0;
+}
+.modal .form-control{
+  width: auto;
+}

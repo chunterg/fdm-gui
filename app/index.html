@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fd Maven</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div id="body">
+		<input type="file" class="hide" nwdirectory id="initProj"/>
+		<div id="sidebar">
+			<div class="content">
+
+			</div>
+		</div>
+		
+		<div id="content">
+			<div class="content">
+				
+			</div>
+			<iframe id="ifm" src="" frameborder="0" width="100%" height="100%"></iframe>
+			<!-- Info Modal -->
+			<div class="modal fade" id="infoBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+
+			      <div class="modal-body">
+
+			      </div>
+
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<!-- Confirm Modal -->
+			<div class="modal fade" id="confirmBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title">添加自定义工具</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<div class="form-inline">
+				        <div class="form-group">
+						    <input type="text" class="form-control" id="inputName" placeholder="插件名">
+					  	</div>
+					  	<div class="form-group">
+						    <input type="text" class="form-control" id="inputUrl" placeholder="插件地址">
+						</div>
+					</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			        <button type="button" class="btn btn-primary">确定</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+
+</body>
+</html>

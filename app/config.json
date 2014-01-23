@@ -1,0 +1,12 @@
+{
+    "customMenu": {
+        "JSONP工具": "http://wd.alibaba-inc.com/jsonp/",
+        "特殊字符": "http://wd.alibaba-inc.com/fdmaven/tools/symbol/",
+        "代码工具": "http://wd.alibaba-inc.com/fdmaven/tools/codehelper/",
+        "tinypng": "http://tinypng.org/"
+    },
+    "projList": {
+        "test1": "D:/static/grunt/test1",
+        "grunt-jquery": "D:/static/grunt/grunt-jquery"
+    }
+}

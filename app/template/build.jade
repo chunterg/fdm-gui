@@ -1,0 +1,10 @@
+div.build.clearfix
+	h2 项目列表
+	div.projlist
+		ul
+			-for (var key in projList)
+					li.clearfix
+						span.glyphicon.glyphicon-list-alt 
+						a(href="#") #{key}
+							span #{projList[key]}
+					

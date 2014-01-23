@@ -1,0 +1,9 @@
+div.filelist
+	- if(projName)
+		h2 #{projName}
+	ul.files
+		- for (var key in fileList)
+			li 
+				if fileList[key]['isDir'] == true
+					span.glyphicon.glyphicon-folder-close
+				a.f_name(href="#",data-dir=fileList[key]['src'],class=fileList[key]['isDir']==true?"folder":"")(title=fileList[key]['name']) #{fileList[key]['name']}

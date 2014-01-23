@@ -1,0 +1,14 @@
+{
+  "name": "FdMaven-gui",
+  "main": "app/index.html",
+  "window": {
+    "toolbar": true,
+    "frame": true,
+    "width": 950,
+    "height": 588,
+    "position": "center",
+    "min_width": 900,
+    "min_height": 588,
+    "resizable":false
+  }
+}

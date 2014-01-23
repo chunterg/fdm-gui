@@ -1,0 +1,17 @@
+div.maven
+	h2 项目管理
+	ul
+		li
+			a(href="#",id="create") 模板创建
+		li
+			a(href="#",id="build") 开发构建
+		li
+			a(href="#") 项目发布	
+hr
+div.customMenu
+	h2 辅助工具
+		a(href="#",id="addCus",data-toggle="modal",data-target="#confirmBox",data-backdrop="false").glyphicon.glyphicon-plus
+	ul
+		- for(var m in menulist)
+			li
+				a(href="#",data-href=menulist[m]) #{m}

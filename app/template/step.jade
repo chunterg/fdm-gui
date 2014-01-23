@@ -1,0 +1,27 @@
+div.clearfix.maven-content(class=type)
+	a.glyphicon.glyphicon-chevron-left.guide.prev(href="#")
+	a.glyphicon.glyphicon-chevron-right.guide.next(href="#")
+	div.step.step1
+		div.content
+			-if(type=="init")
+				h2 模板列表
+				ul
+					-for (var i=0;i<templist.length;i++)
+						li
+							div.mask 选择此模板创建 
+							a(href="#",data-name=templist[i]['key'][1]) #{templist[i]['key'][1]}
+								span #{templist[i]['key'][2]}
+			-else if(type=="build")
+				h2 项目列表
+				ul.projlist
+					-for (var key in projList)
+						li.clearfix
+							span.glyphicon.glyphicon-list-alt 
+							a(href="#",data-dir=projList[key],data-name=key) #{key}
+								span #{projList[key]}
+	div.step.step2
+		div.content
+			-if(type=="init")
+				h2 初始化模板
+			-else if(type=="build")
+

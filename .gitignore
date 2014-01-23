@@ -1,0 +1,6 @@
+.DS_Store
+.tmp
+*.iml
+.idea
+.nodemonignore
+node_modules
